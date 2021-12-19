@@ -1,4 +1,5 @@
 ﻿using RageIO;
+using System.Collections.Generic;
 using System.IO;
 
 namespace RagePackage.Commands
@@ -22,10 +23,12 @@ namespace RagePackage.Commands
         }
     }
 
-    public class DirectoryMoveCommand : Command
+    public class FilesMoveCommand : Command
     {
         public string From { get; set; }
         public string To { get; set; }
+
+        public List<string> Files { get; set; }
 
         public override void Execute()
         {
