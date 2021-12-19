@@ -22,6 +22,17 @@ namespace RagePackage.Commands
         }
     }
 
+    public class DirectoryMoveCommand : Command
+    {
+        public string From { get; set; }
+        public string To { get; set; }
+
+        public override void Execute()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
+
     public class FileRenameCommand : Command
     {
         public string Path { get; set; }
